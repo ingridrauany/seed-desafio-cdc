@@ -24,6 +24,10 @@ namespace DesafioCDC.DataAccess
                 .HasMaxLength(400);
 
             modelBuilder.Entity<Author>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
+
+            modelBuilder.Entity<Author>()
                 .Property(e => e.CreatedAt)
                 .HasDefaultValueSql("GETDATE()");
         }
