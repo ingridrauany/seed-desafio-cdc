@@ -30,6 +30,13 @@ namespace DesafioCDC.DataAccess
             modelBuilder.Entity<Author>()
                 .Property(e => e.CreatedAt)
                 .HasDefaultValueSql("GETDATE()");
+
+            modelBuilder.Entity<Category>()
+                .HasKey(e => e.Id);
+
+            modelBuilder.Entity<Category>()
+               .Property(e => e.Name)
+               .IsRequired();
         }
     }
 }

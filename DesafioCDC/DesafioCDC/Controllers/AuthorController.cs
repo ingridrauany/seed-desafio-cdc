@@ -31,7 +31,7 @@ namespace DesafioCDC.Controllers
             }
 
             var author = _mapper.Map<Author>(authorRequest);
-            var addedAuthor = await _authorRepository.Add(author);
+            var addedAuthor = await _authorRepository.AddAsync(author);
 
             var response = new
             {

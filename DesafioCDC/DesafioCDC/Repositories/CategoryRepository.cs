@@ -3,15 +3,15 @@ using DesafioCDC.Entities;
 
 namespace DesafioCDC.Repositories
 {
-    public interface IAuthorRepository : IBaseRepository<Author>
+    public interface ICategoryRepository : IBaseRepository<Category>
     {
     }
 
-    public class AuthorRepository : BaseRepository<Author>, IAuthorRepository
+    public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
     {
         private readonly DataContext _dbContext;
 
-        public AuthorRepository(DataContext context) : base(context)
+        public CategoryRepository(DataContext context) : base(context)
         {
             _dbContext = context;
         }
