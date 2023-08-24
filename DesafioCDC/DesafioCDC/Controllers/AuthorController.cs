@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using DesafioCDC.Entities;
-using DesafioCDC.Repositories;
-using DesafioCDC.Requests;
+using DesafioCDC.Domain.Entities;
+using DesafioCDC.Domain.Repositories;
+using DesafioCDC.Domain.Requests;
 using DesafioCDC.Validations;
 using Microsoft.AspNetCore.Mvc;
 

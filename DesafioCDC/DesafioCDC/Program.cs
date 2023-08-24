@@ -1,5 +1,5 @@
 using DesafioCDC.DataAccess;
-using DesafioCDC.Repositories;
+using DesafioCDC.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

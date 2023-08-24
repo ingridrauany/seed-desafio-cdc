@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using DesafioCDC.Entities;
-using DesafioCDC.Requests;
+using DesafioCDC.Domain.Entities;
+using DesafioCDC.Domain.Requests;
 
-namespace DesafioCDC.MappingProfile
+namespace DesafioCDC.Domain.Mapping
 {
     public class MappingProfile : Profile
     {

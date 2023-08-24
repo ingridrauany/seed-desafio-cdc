@@ -1,7 +1,7 @@
 ﻿using DesafioCDC.DataAccess;
-using DesafioCDC.Entities;
+using DesafioCDC.Domain.Entities;
 
-namespace DesafioCDC.Repositories
+namespace DesafioCDC.Domain.Repositories
 {
     public interface IAuthorRepository : IBaseRepository<Author>
     {

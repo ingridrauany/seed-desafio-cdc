@@ -1,4 +1,4 @@
-﻿namespace DesafioCDC.Entities
+﻿namespace DesafioCDC.Domain.Entities
 {
     public class Category
     {

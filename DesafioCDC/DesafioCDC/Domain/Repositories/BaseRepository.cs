@@ -2,7 +2,7 @@
 using DesafioCDC.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DesafioCDC.Repositories
+namespace DesafioCDC.Domain.Repositories
 {
     public interface IBaseRepository<T>
     {

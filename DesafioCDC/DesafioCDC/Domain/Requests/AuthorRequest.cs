@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace DesafioCDC.Requests
+namespace DesafioCDC.Domain.Requests
 {
     public class AuthorRequest
     {
