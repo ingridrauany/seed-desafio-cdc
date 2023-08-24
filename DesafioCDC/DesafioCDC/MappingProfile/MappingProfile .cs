@@ -9,6 +9,7 @@ namespace DesafioCDC.MappingProfile
         public MappingProfile()
         {
             CreateMap<AuthorRequest, Author>();
+            CreateMap<CategoryRequest, Category>();
         }
     }
 }
