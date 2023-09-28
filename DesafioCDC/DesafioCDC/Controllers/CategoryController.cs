@@ -2,6 +2,7 @@
 using DesafioCDC.Domain.Entities;
 using DesafioCDC.Domain.Repositories;
 using DesafioCDC.Domain.Requests;
+using DesafioCDC.Validations;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesafioCDC.Controllers
@@ -24,14 +25,19 @@ namespace DesafioCDC.Controllers
         public async Task<IActionResult> Create([FromBody] CategoryRequest categoryRequest)
         {
             var category = _mapper.Map<Category>(categoryRequest);
-            var addedCategory = await _categoryRepository.AddAsync(category);
-
-            var response = new
+            if (ModelState.IsValid)
             {
-                Message = "Categoria criada com sucesso",
-                Category = addedCategory
-            };
-            return Ok(response);
+                var addedCategory = await _categoryRepository.AddAsync(category);
+
+                var response = new
+                {
+                    Message = "Categoria criada com sucesso",
+                    Category = addedCategory
+                };
+                return Ok(response);
+            } 
+
+            return BadRequest();
         }
     }
 }

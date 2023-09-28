@@ -8,6 +8,7 @@ namespace DesafioCDC.DataAccess
         public DataContext(DbContextOptions<DataContext> options) : base(options) {}
 
         public DbSet<Author> Authors { get; set; }
+        public DbSet<Author> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

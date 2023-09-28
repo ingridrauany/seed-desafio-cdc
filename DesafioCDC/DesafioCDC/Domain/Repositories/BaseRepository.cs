@@ -1,5 +1,4 @@
 ﻿using DesafioCDC.DataAccess;
-using DesafioCDC.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DesafioCDC.Domain.Repositories

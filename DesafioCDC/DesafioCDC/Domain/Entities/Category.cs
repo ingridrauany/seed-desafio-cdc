@@ -1,4 +1,7 @@
-﻿namespace DesafioCDC.Domain.Entities
+﻿using DesafioCDC.Validations;
+using System.ComponentModel.DataAnnotations;
+
+namespace DesafioCDC.Domain.Entities
 {
     public class Category
     {
